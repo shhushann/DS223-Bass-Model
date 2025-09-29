@@ -1,1 +1,29 @@
-*.ipynb_checkpoints/
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtualenvs / env files
+venv/
+.env
+.envrc
+
+# Editor folders
+.vscode/
+.idea/
+
+# Byte-compiled / build artifacts
+*.egg-info/
+dist/
+build/
+
+# Data / outputs (optional)
+*.sqlite3
+*.csv
+*.h5
