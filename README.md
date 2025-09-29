@@ -9,8 +9,6 @@ The analysis includes:
 - Model fitting and forecasting future adoption.  
 - Visualization of adoption curves, forecasts, and geographic distribution.  
 
-Assignment PDF: [`Homework-on-Bass-Model.pdf`](./Homework-on-Bass-Model.pdf)  
-Project Report: [`DS223_Assignment_1_Shushan Gevorgyan.pdf`](./DS223_Assignment_1_Shushan%20Gevorgyan.pdf)  
 
 ---
 
