@@ -53,7 +53,7 @@ This directory holds datasets used for analysis:
 1. **Clone this repository**  
    ```bash
    git clone https://github.com/shhushann/DS225-Bass-Model.git
-   cd DS225-Bass-Model
+   cd DS223-Bass-Model
 
 
 2. Create a virtual environment
