@@ -52,7 +52,7 @@ This directory holds datasets used for analysis:
 
 1. **Clone this repository**  
    ```bash
-   git clone https://github.com/shhushann/DS225-Bass-Model.git
+   git clone https://github.com/shhushann/DS223-Bass-Model.git
    cd DS223-Bass-Model
 
 
