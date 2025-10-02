@@ -30,7 +30,7 @@ display(Image(filename=r'img/header.png'))
 
 
     
-![png](output_4_0.png)
+![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_4_0.png)
     
 
 
@@ -198,7 +198,7 @@ plt.show()
 
 
     
-![png](output_24_0.png)
+![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_24_0.png)
     
 
 
@@ -221,7 +221,7 @@ plt.show()
 
 
     
-![png](output_26_0.png)
+![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_26_0.png)
     
 
 
@@ -244,7 +244,6 @@ for i in range(T):
         S_future[i] = (p_hat_gmv + q_hat_gmv * (Y_future[i-1] / M_hat_gmv)) * (M_hat_gmv - Y_future[i-1])
         Y_future[i] = Y_future[i-1] + S_future[i]
 
-# Create DataFrame for predictions
 df_pred = pd.DataFrame({
     'Year': future_years,
     'New_GMV_million_USD': S_future.round(1),
@@ -290,7 +289,7 @@ plt.show()
 
 
     
-![png](output_29_0.png)
+![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_29_0.png)
     
 
 
@@ -586,7 +585,7 @@ plt.show()
 
 
     
-![png](output_37_0.png)
+![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_37_0.png)
     
 
 
