@@ -2,6 +2,34 @@
 # Bass Model
 # *Shushan Gevorgyan*
 
+## Time Innovation: *ThredUp AI Search* 
+## Similar Product: *Vinted* 
+
+
+```python
+display(Image(filename=r'img/header.png'))
+```
+
+
+    
+![png](output_2_0.png)
+    
+
+
+A past innovation that resembles ThredUp AI Search is Vinted, the peer-to-peer online marketplace for second-hand clothing that has been popular in Europe since the late 2000s. Both platforms aim to simplify and accelerate the process of buying and selling pre-owned clothing online. Vinted allowed users to list items, browse through curated categories, and find products through text-based searches and filters. Functionally, Vinted pioneered the concept of accessible, large-scale second-hand shopping online, connecting buyers and sellers in a user-friendly interface and encouraging sustainable fashion practices.
+
+ThredUp AI Search builds upon this concept with the use of modern artificial intelligence and computer vision. Unlike Vinted’s primarily keyword- or category-based search, ThredUp lets users input ultra-specific phrases or upload images to find visually similar clothing items from millions of listings. This reduces guesswork and increases discoverability, enabling users who may be unfamiliar with brands or styles to shop sustainably with ease. While both innovations have expanded the second-hand fashion market, ThredUp’s AI-driven approach represents a technological evolution, improving user experience and driving higher engagement, as seen in its reported 38% year-over-year increase in searches per session.
+
+## Data extraction
+
+For this analysis, I sourced historical data on Vinted from Statista. The original data was provided in PPTX format as plots within a presentation, which required manual extraction. I was able to convert the visual data into Excel files for further processing. However, the Excel files I found only contained data up to 2021, which was insufficient for modeling the diffusion of the innovation. To address this, I combined the extracted historical data with more recent publicly available statistics to construct a complete time series suitable for Bass model estimation and forecasting.
+I was also able to find data showing downloads of Vinted in 2024 by countires, which supported my answer for question N *6*. 
+
+My main variable for the Bass model analysis is Gross Merchandise Volume (GMV) of Vinted worldwide from 2016 to 2024, measured in million USD. I also collected Revenue data, which served as an additional reference to validate the Bass model’s predictive function. GMV was chosen as the primary variable because it reflects the total value of all transactions on the platform, capturing the overall scale, adoption, and market activity more directly than revenue alone. Revenue, while important for financial performance, depends on commission rates and business model specifics, which can fluctuate independently of user adoption. Therefore, GMV provides a better proxy for the diffusion and popularity of the platform across users, making it ideal for modeling adoption patterns using the Bass diffusion model.
+\newpage
+
+
+
 ## Libraries and Packages
 
 
@@ -19,31 +47,6 @@ from IPython.display import Image, display
 import numpy as np
 
 ```
-
-## Time Innovation: *ThredUp AI Search* 
-## Similar Product: *Vinted* 
-
-
-```python
-display(Image(filename=r'img/header.png'))
-```
-
-
-    
-![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_4_0.png)
-    
-
-
-A past innovation that resembles ThredUp AI Search is Vinted, the peer-to-peer online marketplace for second-hand clothing that has been popular in Europe since the late 2000s. Both platforms aim to simplify and accelerate the process of buying and selling pre-owned clothing online. Vinted allowed users to list items, browse through curated categories, and find products through text-based searches and filters. Functionally, Vinted pioneered the concept of accessible, large-scale second-hand shopping online, connecting buyers and sellers in a user-friendly interface and encouraging sustainable fashion practices.
-
-ThredUp AI Search builds upon this concept with the use of modern artificial intelligence and computer vision. Unlike Vinted’s primarily keyword- or category-based search, ThredUp lets users input ultra-specific phrases or upload images to find visually similar clothing items from millions of listings. This reduces guesswork and increases discoverability, enabling users who may be unfamiliar with brands or styles to shop sustainably with ease. While both innovations have expanded the second-hand fashion market, ThredUp’s AI-driven approach represents a technological evolution, improving user experience and driving higher engagement, as seen in its reported 38% year-over-year increase in searches per session.
-
-## Data extraction
-
-For this analysis, I sourced historical data on Vinted from Statista. The original data was provided in PPTX format as plots within a presentation, which required manual extraction. I was able to convert the visual data into Excel files for further processing. However, the Excel files I found only contained data up to 2021, which was insufficient for modeling the diffusion of the innovation. To address this, I combined the extracted historical data with more recent publicly available statistics to construct a complete time series suitable for Bass model estimation and forecasting.
-I was also able to find data showing downloads of Vinted in 2024 by countires, which supported my answer for question N *6*. 
-
-My main variable for the Bass model analysis is Gross Merchandise Volume (GMV) of Vinted worldwide from 2016 to 2024, measured in million USD. I also collected Revenue data, which served as an additional reference to validate the Bass model’s predictive function. GMV was chosen as the primary variable because it reflects the total value of all transactions on the platform, capturing the overall scale, adoption, and market activity more directly than revenue alone. Revenue, while important for financial performance, depends on commission rates and business model specifics, which can fluctuate independently of user adoption. Therefore, GMV provides a better proxy for the diffusion and popularity of the platform across users, making it ideal for modeling adoption patterns using the Bass diffusion model.
 
 ## Loading Data
 
@@ -198,7 +201,7 @@ plt.show()
 
 
     
-![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_24_0.png)
+![png](output_24_0.png)
     
 
 
@@ -221,7 +224,7 @@ plt.show()
 
 
     
-![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_26_0.png)
+![png](output_26_0.png)
     
 
 
@@ -289,7 +292,7 @@ plt.show()
 
 
     
-![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_29_0.png)
+![png](output_29_0.png)
     
 
 
@@ -528,6 +531,9 @@ if (outputEl) {{
                         })                };                });            </script>        </div>
 
 
+\newpage
+
+
 In 2024, Vinted app downloads were substantial across multiple countries, with the United Kingdom leading at 6.37 million downloads, followed by France (3.10 million), Italy (3.09 million), and Germany (2.18 million). Other countries such as Poland, Spain, Romania, Sweden, the Netherlands, and Greece collectively contributed millions more, reflecting strong international adoption. This distribution demonstrates that the secondhand marketplace is not confined to a single country but has significant usage across Europe. Consequently, analyzing the diffusion of innovations like ThredUp AI Search on a global scale is appropriate, as it captures the broad market potential and network effects evident in similar international platforms.
 
 ## GMV to estimated adopters
@@ -585,9 +591,11 @@ plt.show()
 
 
     
-![png](DS223_Assignment_1_Shushan%20Gevorgyan_files/DS223_Assignment_1_Shushan%20Gevorgyan_37_0.png)
+![png](output_38_0.png)
     
 
+
+\newpage
 
 # Summary
 
